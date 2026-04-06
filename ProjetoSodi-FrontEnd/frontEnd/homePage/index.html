@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SODI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div id="divLogosodi">
+          <img src="../homePage/icons/sodiLogo.png" alt="" id="logo" />
+        </div>
+        <div>
+          <input type="text" placeholder="Buscar ordem..." id="searchInput" />
+        </div>
+        <div id="divUser">
+          <div id="logout">
+            <img src="../adm/icons/sair.png" alt="" width="30px" />
+          </div>
+          <div id="user">
+            <img src="../adm/icons/perfil.png" alt="" id="userImg" width="40px"/>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <img src="" alt="" />
+        <p id="osN">OS</p>
+        <p id="mN">MANUAIS</p>
+        <img src="" alt="" />
+      </nav>
+      <article id="divFormbuttons">
+        <div id="divTform">
+          <h2 id="tFormulario">Formulário OS</h2>
+        </div>
+        <div id="formulario">
+          <div id="divInputs">
+            <input
+              type="text"
+              placeholder="Id da máquina..."
+              class="inputs"
+              id="idMaq"
+            />
+            <input
+              type="text"
+              placeholder="Status..."
+              class="inputs"
+              id="statusMaq"
+            />
+            <input
+              type="text"
+              placeholder="Ano da Máquina..."
+              class="inputs"
+              id="anoMaq"
+            />
+            <input
+              type="text"
+              class="inputs"
+              placeholder="Descrição..."
+              id="descMaq"
+            />
+            <input
+              type="text"
+              placeholder="Marca..."
+              class="inputs"
+              id="marcaMaq"
+            />
+            <input
+              type="text"
+              placeholder="Mecânico responsável..."
+              class="inputs"
+              id="mecanicoMaq"
+            />
+            <input
+              type="text"
+              class="inputs"
+              placeholder="Modelo da máquina..."
+              id="modeloMaq"
+            />
+            <input type="date" class="inputs" id="dataMaq" />
+          </div>
+          <div id="divButtons">
+            <button id="buttonS">Salvar</button>
+            <button id="buttonC">Cancelar</button>
+          </div>
+        </div>
+        <button id="buttonNo">Criar nova ordem</button>
+      </article>
+      <article id="servicos"></article>
+      <footer></footer>
+    </main>
+    <dialog id="modalOS">
+      <div id="modalContent">
+        <button id="Fechar">Fechar</button>
+      </div>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>

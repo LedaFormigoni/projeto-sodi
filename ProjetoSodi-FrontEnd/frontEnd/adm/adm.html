@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Admin</title>
+    <link rel="stylesheet" href="adm.css" />
+  </head>
+  <body>
+    <div id="menu_esquerda">
+      <ul id="barralateral">
+        <li>
+          <img src="./icons/casa.png" alt="casa" />
+          <p>Administração</p>
+        </li>
+        <li>
+          <img src="./icons/planilha.png" alt="planilha" />
+          <p>Ordem de Serviço</p>
+        </li>
+        <li>
+          <img src="./icons/maquinario.png" alt="Maquina" />
+          <p>Máquinas</p>
+        </li>
+        <li>
+          <img src="./icons/perfil.png" alt="perfil" />
+          <p>Funcionários</p>
+        </li>
+
+        <li>
+          <img src="./icons/grafico.png" alt="grafico" />
+          <p>Histórico</p>
+        </li>
+      </ul>
+    </div>
+    <article>
+      <header>
+        <div id="divLogosodi">
+          <img src="./icons/sodi2.png" alt="" id="logo" />
+        </div>
+        <div id="divUser">
+          <div id="logout">
+            <img src="./icons/sair.png" alt="" width="30px" />
+          </div>
+          <div id="user">
+            <img src="./icons/perfil.png" alt="" id="userImg" width="40px" />
+          </div>
+        </div>
+      </header>
+      <div id="conteiner">
+        <section>
+          <div id="divstatus">
+            <button class="card" id="aberta">Ordens Abertas</button>
+            <button class="card" id="manutencao">Em Manutenção</button>
+            <button class="card" id="concluida">Concluídas</button>
+          </div>
+          <div id="modal_maquina" class="modal">
+            <div class="modal_conteudo">
+              <div class="modal_topo">
+                <h2>Adicionar Máquina</h2>
+                <button id="fechar_modalMaqui">X</button>
+              </div>
+              <div id="modal_corpo">
+                <input id="modelo_maquina" type="text" placeholder="Modelo" />
+                <input id="marca_maquina" type="text" placeholder="Marca" />
+                <input id="ano_maquina" type="text" placeholder="Ano" min="4" />
+                <button id="cadastro_maquina">Cadastrar</button>
+              </div>
+            </div>
+          </div>
+          <div id="direita">
+            <div class="maquina" id="cad_maquina">
+              <p>Cadastro de Máquinas</p>
+              <button id="maquina_cad">Adicionar Máquina</button>
+            </div>
+          </div>
+        </section>
+        <div id="vaziaordem"></div>
+      </div>
+    </article>
+
+    <script src="adm.js"></script>
+  </body>
+</html>

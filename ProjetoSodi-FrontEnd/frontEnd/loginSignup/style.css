@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+
+article {
+    padding: 40px;
+    margin: 150px;
+}
+
+#escrever {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.campo {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+.campo input {
+    width: 250px;
+    padding: 10px 10px 10px 40px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.614);
+    /* border: none; */
+}
+
+.icone{
+    position: absolute; /* Posiciona o ícone dentro do campo de entrada */
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente o ícone */
+    width: 20px;
+}
+
+#click {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Gravitas One", serif;
+    color: #d9d9d9;
+}
+
+#fundo_verde {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+
+#verde {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#logo {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #3c8670;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.614);
+    font-family: "Anton", sans-serif;
+    color: #d9d9d9;
+    cursor: pointer;
+}
+
+#login {
+    color : #3c8670;
+    border-bottom: #3c8670 2px solid;
+    cursor: pointer;
+}
+
+#Sign_up {
+    cursor: pointer;
+
+}
+
+#btn_cadastro {
+    display: none;
+}
+
